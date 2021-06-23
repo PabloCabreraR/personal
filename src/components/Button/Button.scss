@@ -1,0 +1,17 @@
+$bgcolor: #B3B3B3;
+$color: #FF0000;
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button{
+    @include flexCenter();
+    button{
+        background-color: $bgcolor;
+        color: $color;
+        padding: 10px 20px;
+    }
+}
